@@ -1,0 +1,54 @@
+<div class="wrapper">
+    <div class="page-header section-dark" style="background-image: url('assets/img/examples/dressing.jpg')">
+        <div class="filter"></div>
+        <div class="content-center">
+            <div class="container">
+                <div class="title-brand">
+                 
+                    <h2 class="presentation-title">Nos creations</h2>
+                
+                </div>
+
+                <h3 class="presentation-subtitle text-center">Chosissez l'une de nos creations ou configurez la</h3>
+            </div>
+        </div>
+       <!-- <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+         <h6 class="category category-absolute">Designed and coded by -->
+
+     
+    </div>
+    <div class="main">
+  
+        <div class="section text-center">
+            <div class="container">
+              <div class="row">
+                
+                  <div *ngFor="let obj of array | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" class="col-md-3">
+                      <div class="info">
+                        <div class="icon icon-danger">
+                          <img class="catalogueimg" src="{{obj.src}}"> </div>
+                        <div class="description">
+                          <br>
+                            <h6 class="info-title">{{obj.titre}}</h6>
+                            <hr>
+                        </div>
+                      </div>
+  
+                    </div>
+                    <br>
+                    <div class="col-md-12">  
+                       <ngb-pagination
+                      [(page)]="page"
+                      [pageSize]="pageSize"
+                      [collectionSize]="array.length"></ngb-pagination></div>
+                 
+
+               
+                </div>
+            
+
+            </div>
+          </div>
+        
+    </div>
+</div>
