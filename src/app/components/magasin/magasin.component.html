@@ -26,7 +26,7 @@
                   <div *ngFor="let obj of array | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" class="col-md-3">
                       <div class="info">
                         <div class="icon icon-danger">
-                          <img class="catalogueimg" src="{{obj.src}}"> </div>
+                          <img (click)="clickdetail(obj)" class="catalogueimg" src="{{obj.src}}"> </div>
                         <div class="description">
                           <br>
                             <h6 class="info-title">{{obj.titre}}</h6>

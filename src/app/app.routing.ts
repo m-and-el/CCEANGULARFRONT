@@ -9,11 +9,13 @@ import { SignupComponent } from './examples/signup/signup.component';
 import { LandingComponent } from './examples/landing/landing.component';
 import { HomeComponent } from './components/home/home.component';
 import { MagasinComponent } from './components/magasin/magasin.component';
+import { ChemiseDetailComponent } from './components/chemise-detail/chemise-detail.component';
 
 const routes: Routes =[
   { path: '', component: HomeComponent },
     { path: 'home',             component: HomeComponent },
     { path: 'magasin',             component: MagasinComponent },
+    { path: 'detailchemise',             component: ChemiseDetailComponent },
 
    // { path: 'home',             component: ComponentsComponent },
     { path: 'user-profile',     component: ProfileComponent },

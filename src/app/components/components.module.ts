@@ -16,6 +16,7 @@ import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { HomeComponent } from './home/home.component';
 import { MagasinComponent } from './magasin/magasin.component';
+import { ChemiseDetailComponent } from './chemise-detail/chemise-detail.component';
 
 @NgModule({
     imports: [
@@ -36,7 +37,8 @@ import { MagasinComponent } from './magasin/magasin.component';
         NgbdModalComponent,
         NgbdModalContent,
         HomeComponent,
-        MagasinComponent
+        MagasinComponent,
+        ChemiseDetailComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

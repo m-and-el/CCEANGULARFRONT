@@ -11,6 +11,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
+import { ChemiseDetailComponent } from './components/chemise-detail/chemise-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,8 +29,9 @@ import { ExamplesModule } from './examples/examples.module';
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ChemiseDetailComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, Injectable } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @Component({
@@ -6,6 +6,7 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss']
 })
+
 export class NavbarComponent implements OnInit {
     private toggleButton: any;
     private sidebarVisible: boolean;
