@@ -12,8 +12,6 @@ import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
 import { ChemiseDetailComponent } from './components/chemise-detail/chemise-detail.component';
 import { HttpClientModule } from '@angular/common/http';
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     HttpClientModule,
     NgxImageZoomModule.forRoot()  
+  ],
+  exports : [
+    NavbarComponent
   ],
   providers: [ChemiseDetailComponent],
   bootstrap: [AppComponent]
