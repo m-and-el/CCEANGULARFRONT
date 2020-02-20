@@ -1,28 +1,4 @@
-<nav class="navbar navbar-toggleable-md fixed-top " color-on-scroll="450">
-		<div class="container">
-			<div class="navbar-translate">
-				<button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-bar"></span>
-					<span class="navbar-toggler-bar"></span>
-					<span class="navbar-toggler-bar"></span>
-				</button>
-				<a class="navbar-brand" href="www.creative-tim.com">Paper Kit 2 Angular</a>
-			</div>
-			<div class="collapse navbar-collapse" id="navbarToggler">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a href="https://pk2-angular.creative-tim.com/home" target="_blank" class="nav-link">Back to kit</a>
-					</li>
-					<li class="nav-item">
-						<a href="https://github.com/creativetimofficial/paper-kit-2-angular/issues" target="_blank" class="nav-link">Have an issue</a>
-					</li>
-					<!-- <li class="nav-item">
-						<a href="http://www.creative-tim.com/product/paper-kit-2-pro" target="_blank" class="btn btn-danger btn-round">Upgrade to Pro</a>
-					</li> -->
-				</ul>
-			</div>
-		</div>
-	</nav>
+
 <div class="wrapper">
 
     <div class="container">
@@ -35,8 +11,13 @@
           </div>
           <div class="col-md-6">
             <div class="card page">
-
-              <img src="{{chemisetodisplay.src}}" alt="">
+             
+                <ngx-img-zoom
+                [zoomImageSrc]="myThumbnail"
+                [previewImageSrc]="myFullresImage" 
+                [enableZoom] = "enableZoom"
+            ></ngx-img-zoom>
+            
             </div>
           </div>
 

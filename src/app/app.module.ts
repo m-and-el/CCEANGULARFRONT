@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
-
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
-
+import { NgxImageZoomModule } from 'ngx-image-zoom';
 import { ComponentsModule } from './components/components.module';
 import { ExamplesModule } from './examples/examples.module';
 import { ChemiseDetailComponent } from './components/chemise-detail/chemise-detail.component';
@@ -29,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     ComponentsModule,
     ExamplesModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxImageZoomModule.forRoot()  
   ],
   providers: [ChemiseDetailComponent],
   bootstrap: [AppComponent]
